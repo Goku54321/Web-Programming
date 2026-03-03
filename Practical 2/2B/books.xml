@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE library SYSTEM "books.dtd">
+<library>
+    <book>
+        <title>Web Designing</title>
+        <author>Luffy Shaikh</author>
+        <year>2025</year>
+        <price>550 Rs</price>
+    </book>
+    <book>
+        <title>Web Programming</title>
+        <author>Luffy Shaikh</author>
+        <year>2025</year>
+        <price>650 Rs</price>
+    </book>
+</library>

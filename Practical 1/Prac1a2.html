@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RegExp Object</title>
+</head>
+<body>
+    <h2>Luffy Shaikh: RegExp Object Example</h2>
+    <p>Text: "India is very beautiful country."</p>
+    <button onclick="testRegExp()">Test if country exists</button>
+    <button onclick="replaceRegExp()">Replace 'very' with 'most'</button>
+    <p id="output"></p>
+
+    <script>
+        let text = "India is very beautiful country.";
+
+        function testRegExp() {
+            let pattern = /country/;
+            let result = pattern.test(text);
+            document.getElementById("output").innerHTML = "Does country exist: " + result;
+        }
+
+        function replaceRegExp() {
+            let newText = text.replace(/very/, "most");
+            document.getElementById("output").innerHTML = "New Text: " + newText;
+        }
+    </script>
+</body>
+</html>

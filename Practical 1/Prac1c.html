@@ -1,0 +1,21 @@
+<html>
+<head>
+<script type="text/javascript">
+    function setAndGetCookie() {
+        if(document.form1.user.value == "") {
+            alert("Enter value!");
+            return;
+        }
+        cookievalue = escape(document.form1.user.value) + ";";
+        document.cookie = "name=" + cookievalue;
+        document.write("Setting Cookies : " + "name=" + cookievalue);
+    }
+</script>
+</head>
+<body>
+    <form name="form1" action="">
+        Enter name: <input type="text" name="user"/>
+        <input type="button" value="Set & Get Cookie" onclick="setAndGetCookie();"/>
+    </form>
+</body>
+</html>

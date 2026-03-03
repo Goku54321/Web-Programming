@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+    <xsl:template match="/">
+        <html>
+            <body>
+                <h1>Book List</h1>
+                <xsl:for-each select="library/book">
+                    <div style="margin-bottom: 10px; padding: 10px; border: 1px solid black;">
+                        <p><strong>Title:</strong> <xsl:value-of select="title"/></p>
+                        <p><strong>Author:</strong> <xsl:value-of select="author"/></p>
+                        <p><strong>Year:</strong> <xsl:value-of select="year"/></p>
+                        <p><strong>Price:</strong> <xsl:value-of select="price"/></p>
+                    </div>
+                </xsl:for-each>
+            </body>
+        </html>
+    </xsl:template>
+</xsl:stylesheet>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Math Object</title>
+</head>
+<body>
+    <h2>Luffy Shaikh: Math Object Example</h2>
+    <button onclick="showPi()">Show Pi</button>
+    <button onclick="showRandom()">Random Number</button>
+    <button onclick="showSquareRoot()">Square Root of 36</button>
+    <p id="output"></p>
+
+    <script>
+        function showPi() {
+            document.getElementById("output").innerHTML = "Value of Pi: " + Math.PI;
+        }
+
+        function showRandom() {
+            document.getElementById("output").innerHTML = "Random Number (0 to 1): " + Math.random();
+        }
+
+        function showSquareRoot() {
+            document.getElementById("output").innerHTML = "Square Root of 36: " + Math.sqrt(36);
+        }
+    </script>
+</body>
+</html>

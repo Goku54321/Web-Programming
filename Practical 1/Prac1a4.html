@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Date Object</title>
+</head>
+<body>
+    <h2>Luffy Shaikh: Date Object Example</h2>
+    <button onclick="showDate()">Current Date and Time</button>
+    <button onclick="showYear()">Current Year</button>
+    <button onclick="showDay()">Current Day of Week</button>
+    <p id="output"></p>
+
+    <script>
+        function showDate() {
+            let currentDate = new Date();
+            document.getElementById("output").innerHTML = "Current Date and Time: " + currentDate;
+        }
+
+        function showYear() {
+            let currentDate = new Date();
+            document.getElementById("output").innerHTML = "Current Year: " + currentDate.getFullYear();
+        }
+
+        function showDay() {
+            let currentDate = new Date();
+            let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            document.getElementById("output").innerHTML = "Today is: " + days[currentDate.getDay()];
+        }
+    </script>
+</body>
+</html>

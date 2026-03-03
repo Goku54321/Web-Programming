@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Objects Example</title>
+</head>
+<body>
+    <h2>Luffy Shaikh: Objects Example</h2>
+    <button onclick="showWindowSize()">Window size</button>
+    <button onclick="showNavigatorInfo()">Browser Info</button>
+    <button onclick="showLocation()">Page URL</button>
+    <button onclick="goBack()">Go Back</button>
+    <button onclick="showDocumentTitle()">Show Title</button>
+    <p id="op"></p>
+
+    <script>
+        // Demonstrate Window object (window size)
+        function showWindowSize() {
+            document.getElementById("op").innerHTML = "Window size: " + window.innerWidth + " x " + window.innerHeight;
+        }
+
+        // Demonstrate Navigator object (browser info)
+        function showNavigatorInfo() {
+            document.getElementById("op").innerHTML = "Browser info:<br>" +
+                "appName: " + navigator.appName + "<br>" +
+                "appVersion: " + navigator.appVersion + "<br>" +
+                "platform: " + navigator.platform;
+        }
+
+        // Demonstrate Location object (URL of the page)
+        function showLocation() {
+            document.getElementById("op").innerHTML = "Page URL: " + window.location.href;
+        }
+
+        // Demonstrate History object (go back in history)
+        function goBack() {
+            window.history.back();
+        }
+
+        // Demonstrate Document object (document title)
+        function showDocumentTitle() {
+            document.getElementById("op").innerHTML = "Document Title: " + document.title;
+        }
+    </script>
+</body>
+</html>

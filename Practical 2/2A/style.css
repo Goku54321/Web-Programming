@@ -1,0 +1,17 @@
+library {
+    display: block;
+    font-family: Arial, sans-serif;
+}
+book {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #000;
+}
+title, author, year, price {
+    display: block;
+    font-weight: bold;
+}
+price {
+    color: green;
+}

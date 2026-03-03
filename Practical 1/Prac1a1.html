@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>String Object</title>
+</head>
+<body>
+    <h2>Luffy Shaikh: String Object Example</h2>
+    <p>My String: "Hello, Luffy Shaikh!"</p>
+    <button onclick="showLength()">Show Length</button>
+    <button onclick="toUpperCase()">Uppercase</button>
+    <button onclick="substringDemo()">Substring (0, 5)</button>
+    <p id="output"></p>
+
+    <script>
+        let str = "Hello, Luffy Shaikh!";
+
+        function showLength() {
+            document.getElementById("output").innerHTML = "Length: " + str.length;
+        }
+
+        function toUpperCase() {
+            document.getElementById("output").innerHTML = "Uppercase: " + str.toUpperCase();
+        }
+
+        function substringDemo() {
+            document.getElementById("output").innerHTML = "Substring: " + str.substring(0, 5);
+        }
+    </script>
+</body>
+</html>
